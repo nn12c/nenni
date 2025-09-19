@@ -16,9 +16,6 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  // مهم: غيّر "اسم-المستودع" لاسم الريبو عندك في GitHub
+  base: "/my-app/",
 }));
-
-export default defineConfig({
-  base: '/اسم-المستودع/', // استبدل باسم الريبو في GitHub
-  plugins: [react()],
-})
